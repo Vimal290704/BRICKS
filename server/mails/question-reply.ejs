@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reply to Your Question</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #0056b3;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 10px 0;
+      }
+      .highlight {
+        color: #0056b3;
+        font-weight: bold;
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hi <%= name %>,</h1>
+      <p>
+        Your question about <span class="highlight"><%= title %></span> has
+        received a reply.
+      </p>
+      <p>
+        We recommend checking it out to continue the discussion and gain deeper
+        insights.
+      </p>
+      <p>Thank you for your engagement!</p>
+      <div class="footer">
+        <p>Best regards,</p>
+        <p>The Team</p>
+      </div>
+    </div>
+  </body>
+</html>
